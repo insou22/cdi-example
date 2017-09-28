@@ -7,7 +7,11 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import net.voldex.common.inject.discover.Discover;
 
 @Discover
-public class PlayerInteractListener implements Listener {
+final class PlayerInteractListener implements Listener {
+
+	private PlayerInteractListener() {
+
+	}
 
 	@EventHandler
 	public void on(PlayerInteractEvent event) {

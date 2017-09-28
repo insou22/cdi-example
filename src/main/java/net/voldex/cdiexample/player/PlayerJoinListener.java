@@ -10,9 +10,13 @@ import com.google.inject.Inject;
 
 import net.voldex.common.spigot.inject.plugin.PluginLogger;
 
-public class PlayerJoinListener implements Listener {
+final class PlayerJoinListener implements Listener {
 
 	@Inject @PluginLogger private Logger logger;
+
+	private PlayerJoinListener() {
+
+	}
 
 	@EventHandler
 	public void on(PlayerJoinEvent event) {

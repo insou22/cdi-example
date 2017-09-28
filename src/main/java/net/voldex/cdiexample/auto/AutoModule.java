@@ -11,10 +11,14 @@ import net.voldex.common.spigot.inject.plugin.PluginLogger;
 import net.voldex.cdiexample.bind.HelloWorld;
 
 @Discover
-public class AutoModule extends Module {
+final class AutoModule extends Module {
 
 	@Inject @PluginLogger private Logger logger;
 	@Inject @HelloWorld private String helloWorld;
+
+	private AutoModule() {
+
+	}
 
 	@Initialize
 	private void init() {
