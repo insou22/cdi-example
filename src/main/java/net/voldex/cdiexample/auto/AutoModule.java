@@ -16,10 +16,6 @@ final class AutoModule extends Module {
 	@Inject @PluginLogger private Logger logger;
 	@Inject @HelloWorld private String helloWorld;
 
-	private AutoModule() {
-
-	}
-
 	@Initialize
 	private void init() {
 		this.logger.info("AutoModule says " + this.helloWorld);

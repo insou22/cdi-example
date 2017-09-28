@@ -14,10 +14,6 @@ final class PlayerJoinListener implements Listener {
 
 	@Inject @PluginLogger private Logger logger;
 
-	private PlayerJoinListener() {
-
-	}
-
 	@EventHandler
 	public void on(PlayerJoinEvent event) {
 		this.logger.info(event.getPlayer().getName() + " joined from event.");

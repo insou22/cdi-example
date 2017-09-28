@@ -14,10 +14,6 @@ final class PlayerQuitListener implements Listener {
 
 	@Inject @PluginLogger private Logger logger;
 
-	private PlayerQuitListener() {
-
-	}
-
 	@EventHandler
 	public void on(PlayerQuitEvent event) {
 		this.logger.info(event.getPlayer().getName() + " quit from event.");

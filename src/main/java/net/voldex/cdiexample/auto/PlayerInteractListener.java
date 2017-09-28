@@ -9,10 +9,6 @@ import net.voldex.common.inject.discover.Discover;
 @Discover
 final class PlayerInteractListener implements Listener {
 
-	private PlayerInteractListener() {
-
-	}
-
 	@EventHandler
 	public void on(PlayerInteractEvent event) {
 		event.getPlayer().sendMessage("I was automatically installed");
