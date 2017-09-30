@@ -2,9 +2,9 @@ package net.voldex.cdiexample.player;
 
 import com.google.inject.Inject;
 
-import net.voldex.common.spigot.inject.initialize.Initialize;
-import net.voldex.common.spigot.inject.module.Module;
 import net.voldex.cdiexample.TestPlugin;
+import net.voldex.common.inject.initialize.Initialize;
+import net.voldex.common.spigot.inject.module.Module;
 
 public final class PlayerModule extends Module {
 

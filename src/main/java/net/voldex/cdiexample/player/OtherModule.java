@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 import com.google.inject.Inject;
 
-import net.voldex.common.spigot.inject.initialize.Initialize;
+import net.voldex.common.inject.initialize.Initialize;
 import net.voldex.common.spigot.inject.module.Module;
 import net.voldex.common.spigot.inject.plugin.PluginLogger;
 
